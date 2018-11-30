@@ -6,6 +6,8 @@ import (
 	"log"
 	"math/rand"
 	"sort"
+
+	"github.com/alecholmez/go-examples/recursion/mutual"
 )
 
 func main() {
@@ -25,6 +27,13 @@ func main() {
 		// Crash the program if we receive an error
 		log.Fatal(err)
 	}
+
+	// Mutual Recursion
+	// See package mutual for more information
+	fmt.Println(mutual.IsEven(4))
+	fmt.Println(mutual.IsEven(3))
+	fmt.Println(mutual.IsOdd(1))
+	fmt.Println(mutual.IsOdd(8))
 }
 
 // Print will recursively loop through the loop
